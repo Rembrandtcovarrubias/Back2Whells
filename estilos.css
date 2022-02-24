@@ -1,0 +1,331 @@
+/*Quitamos la separacion de la pagina*/
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Meltland', sans-serif;
+    background:url(../img/patron.png);
+
+                                                                                                                                                           
+}
+/*Todas las clases hablamos de los contenedores*/
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    /*que tenga un margen grande*/
+    margin: auto;
+    /*centar todo denro del contenedro*/
+    overflow: hidden;
+    /*si la imagen se sale del contendero , se auto ajusta*/
+
+}
+.titulo{
+    color: rgb(235, 170, 30);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    
+}
+/*hader*/
+header{
+    width: 100%;
+    height: 900px;
+    background:url(../img/portada.png);
+    /*esta es la ruta para insertar una imagen de fondo*/
+    background-size: cover;
+    background: attachment;
+    position: relative;
+    /*que se bloquee la imagen de fondo*/
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+
+}
+nav>a{
+    color:rgb(230, 188, 52);
+    font-weight: 300;
+    /*Para que la fuente sea mas ligera*/
+    text-decoration: none;
+    /*quita los subrayado*/
+    font-size: 17px;
+    margin-right: 10px;
+    /*realiza la separacion de los mesajes*/
+
+}
+nav>a:hover{
+    color:rgb(224, 47, 47);
+    text-decoration: underline;
+    /*le coloca un subrayado a los enlaces*/
+
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /*colocamos la ola fija y quitamos o igualamos el color*/
+
+}
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.textos-header h1{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.textos-header h2{
+    font-size: 40px;
+    font-weight: 300;
+    color: rgb(231, 228, 44);
+}
+
+
+.contenedro-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    /*repartir el espacio*/
+    
+}
+
+
+.sobre-nosotros- .contenedor-texto{
+    width: 45%;
+    
+}
+
+.contenedor-sobre-nosotros> img{
+    width: 1000%;
+    height: 100%;
+}
+
+
+.contenedor-textos h3{
+   margin-bottom: 15px;
+   font-size: 40px;
+   color: #fff;
+}
+
+.contenedor-textos p{
+    padding: 0 0 30px 15px;
+    font-weight: 30px;
+    color: #fff;
+}
+
+.contenedor-textos h3 span{
+    background: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+.contenedor-textos p{
+    padding: 0 0 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*galeria*/
+
+ .portafolio{
+     background: rgb(219, 130, 27);
+
+ }
+ 
+
+ .galeria-port{
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     /*para que no se junten todas las fotos*/
+ }
+ 
+
+ 
+
+ .imagen-about-us{
+    width: 45%;
+}
+     
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+ 
+ 
+
+.imagen-port>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*para cuando tenemos error*/
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1);
+    background: rgba(238, 223, 18, 0.637);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(1);
+    
+}
+
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: rgb(224, 37, 37);
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(0);
+    
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: rgb(228, 175, 30);
+    display: flex;
+    width: 46%;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    
+}
+
+.cards .card> .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+
+}
+.cards .card img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgb(252, 250, 250);
+}
+
+
+.about-services{
+    background: rgba(247, 30, 30, 0.466);
+    padding-bottom: 30px;
+}
+
+.servicios-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.servicio-ind{
+    width: 70%;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    
+}
+
+.servicio-ind img{
+    width:60%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+    text-align: center;
+    font-size: 35px;
+   
+}
+
+
+/*footer*/
+footer{
+    background: rgba(255, 230, 0, 0.5);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-block: 50px;
+    border-bottom: 5px solid rgb(241, 41, 15);
+}
+
+.content-foo img{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content-foo h4 {
+    color: #fff;
+    font-size: 15px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 0 0 0;
+    color: rgb(240, 36, 36);
+    
+
+}
